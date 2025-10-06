@@ -1,9 +1,9 @@
-Luis Fernando Torres - Data Science & Machine Learning
+Manish Kumar - Data Science & Machine Learning
 
 # sidebar
 
-alt = Luis Fernando Torres
-Luis Fernando Torres
+alt = Manish Kumar
+Manish Kumar
 Data Science | Machine Learning
 
 Show Contacts
@@ -15,10 +15,10 @@ Phone
 +1 (213) 352-2795
 
 Birthday
-June 23, 1982
+October 16, 1998
 
 Location
-Sacramento, California, USA
+South Delhi, Delhi,India
 
 # navbar
 
