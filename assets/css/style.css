@@ -1162,19 +1162,6 @@ main
     margin-bottom: 15px;
 }
 
-.blog-post-read-more
-{
-    font-size: var(--fs-7);
-    color: var(--orange-yellow-crayola); /* Accent color */
-    text-decoration: none;
-    font-weight: var(--fw-500);
-}
-
-.blog-post-read-more:hover
-{
-    text-decoration: underline;
-}
-
 .loading-message, #medium-posts li:only-child
 {
     /* Style for single messages like "No posts found" */
@@ -2028,3 +2015,16 @@ main
 /*      max-width: 700px;*/
 /*  }*/
 /*}*/
+
+.blog-post-read-more
+{
+    font-size: var(--fs-7);
+    color: var(--orange-yellow-crayola); /* Accent color */
+    text-decoration: none;
+    font-weight: var(--fw-500);
+}
+
+.blog-post-read-more:hover
+{
+    text-decoration: underline;
+}
