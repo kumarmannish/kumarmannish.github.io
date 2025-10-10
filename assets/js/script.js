@@ -205,7 +205,7 @@ if (navigationLinks && navigationLinks.length > 0 && pages && pages.length > 0) 
 
 // Function to fetch and display Medium posts
 async function fetchMediumPosts() {
-  const mediumFeedUrl = 'https://medium.com/feed/@monnishkumar';
+  const mediumFeedUrl = 'https://medium.com/feed/@luuisotorres';
   const rss2jsonApiKey = null; // No API key needed for basic use, but good to be aware of if you hit limits
   // For higher volume, you might need an API key from rss2json.com
   const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(mediumFeedUrl)}${rss2jsonApiKey ? `&api_key=${rss2jsonApiKey}` : ''}`;
