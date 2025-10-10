@@ -378,6 +378,7 @@ main
   width: max-content;
   padding: 3px 20px;
   border-radius: 8px;
+  margin-left: -2px;
 }
 
 .info_more-btn
