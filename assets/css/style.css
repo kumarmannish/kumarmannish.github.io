@@ -139,7 +139,7 @@ body
     background: var(--smoky-black)
 }
 
-/* #Reused Style */
+  /* #Reused Style */
 .sidebar, article
 {
   background: var(--eerie-black-2);
@@ -200,10 +200,10 @@ article.active
 
 @keyframes fade
 {
-  0%
-  {
-      opacity: 0
-  }
+  /*0%*/
+  /*{*/
+  /*    opacity: 0*/
+  /*}*/
   100%
   {
       opacity: 1
@@ -316,7 +316,7 @@ main
 
 .sidebar.active
 {
-    max-height: 405px
+    max-height: 40px
 }
 
 .sidebar-info
@@ -328,11 +328,11 @@ main
   gap: 15px
 }
 
-.avatar-box
-{
-  background: var(--bg-gradient-onyx);
-  border-radius: 20px
-}
+/*.avatar-box*/
+/*{*/
+/*  background: var(--bg-gradient-onyx);*/
+/*  border-radius: 20px*/
+/*}*/
 
 .info-content .name
 {
@@ -668,7 +668,7 @@ main
   overflow: hidden
 }
 
-/* #Testimonials Modal */
+ /* #Testimonials Modal */
 .modal-container
 {
   position: fixed;
@@ -801,7 +801,7 @@ main
 }
 
 
-/* #Clients */
+ /* #Clients */
 .clients
 {
     margin-bottom: 15px
@@ -840,13 +840,13 @@ main
     filter: grayscale(0)
 }
 
-/* #Resume */
+ /* #Resume */
 .article-title
 {
     margin-bottom: 30px
 }
 
-/* Education and Experience */
+ /* Education and Experience */
 .timeline
 {
     margin-bottom: 30px
@@ -926,7 +926,7 @@ main
   font-size: .9em /* Adjust the value to your preference */
 }
 
-/* Skills */
+ /* Skills */
 .skills-title
 {
     margin-bottom: 20px
@@ -973,7 +973,7 @@ main
   border-radius: inherit
 }
 
-/* #Portfolio */
+ /* #Portfolio */
 .filter-list
 {
     display: none
@@ -1172,7 +1172,7 @@ main
   font-weight: var(--fw-300)
 }
 
-/* #Blog */
+ /* #Blog */
 .blog-posts
 {
     margin-bottom: 10px
@@ -1274,7 +1274,7 @@ main
   line-height: 1.6
 }
 
-/* #Contact */
+ /* #Contact */
 .mapbox
 {
   position: relative;
@@ -1366,8 +1366,6 @@ main
     background-color: var(--vegas-gold)
 }
 
-/* #Responsive */
-
 /* Responsive larger than 450px screen */
 @media (min-width: 450px)
 {
@@ -1384,7 +1382,7 @@ main
   }
 }
 
-/* Responsive larger than 580px screen */
+/* Responsive larger than 580px screen*/
 @media (min-width: 580px)
 {
   /* Custom Property */
@@ -1431,8 +1429,8 @@ main
   /* #Main */
   main
   {
-    margin-top: 60px;
-    margin-bottom: 100px
+    margin-top: 80px;
+    margin-bottom: 100px;
   }
 
   /* #Sidebar */
@@ -1847,7 +1845,8 @@ main
   {
     position: relative;
     width: max-content;
-    margin: auto
+    margin: auto;
+    left: 0
   }
 
   /* Navbar */
@@ -1874,7 +1873,6 @@ main
   {
       font-weight: var(--fw-500)
   }
-
   /*  #About */
 
   /* Service */
@@ -1909,7 +1907,7 @@ main
   }
 }
 
-/* Responsive larger than 1250px screen */
+/*Responsive larger than 1250px screen */
 @media (min-width: 1250px)
 {
   /* Reset */
@@ -1948,6 +1946,12 @@ main
       width: auto
   }
 
+    .navbar-list
+    {
+        gap: 30px;
+        padding: 0 20px
+    }
+
   article
   {
       min-height: 100%
@@ -1957,10 +1961,11 @@ main
   main
   {
     max-width: 1516px;
-    margin-inline: auto;
+    margin-left: -25px;
+    margin-outside: auto;
     display: flex;
     justify-content: center;
-    align-items: stretch
+    align-items: stretch;
   }
 
   .main-content
@@ -1978,8 +1983,9 @@ main
     max-height: max-content;
     height: 100%;
     margin-bottom: 0;
+    margin-right: 15px;
     padding-top: 60px;
-    z-index: 1
+    z-index: 1;
   }
 
   .sidebar-info
@@ -2062,7 +2068,7 @@ main
 .blog-post-item
 {
   background: var(--eerie-black-2); /* Or your card background color */
-  /*border-radius: var(--border-radius-md); !* Or your standard border radius *!*/
+  /*border-radius: var(--border-radius-md); !* Or your standard border radius */
   padding: 20px;
   border: 1px solid var(--jet); /* Or your border color */
   display: flex; /* For aligning thumbnail and content */
@@ -2075,7 +2081,7 @@ main
   width: 100%; /* Full width within its flex container part */
   max-height: 250px; /* Limit height */
   object-fit: cover; /* Cover the area nicely */
-  /*border-radius: var(--border-radius-sm); !* Slight rounding for the image *!*/
+  /*border-radius: var(--border-radius-sm); !* Slight rounding for the image */
   margin-bottom: 15px /* Space below image if stacked */
 }
 
