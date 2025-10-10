@@ -1946,12 +1946,6 @@ main
       width: auto
   }
 
-    .navbar-list
-    {
-        gap: 30px;
-        padding: 0 20px
-    }
-
   article
   {
       min-height: 100%
