@@ -1060,6 +1060,21 @@ main
     margin-bottom: 15px;
 }
 
+/* Blog Read More Link */
+.blog-post-read-more
+{
+    font-size: var(--fs-7);
+    color: var(--orange-yellow-crayola);
+    text-decoration: none;
+    font-weight: var(--fw-500);
+    transition: var(--transition-1);
+}
+
+.blog-post-read-more:hover
+{
+    text-decoration: underline;
+}
+
 .loading-message, #medium-posts li:only-child
 {
     text-align: center;
@@ -1910,7 +1925,7 @@ main
 }
 
 /* Blog Form Status */
-.form-status-message 
+.form-status-message
 {
     font-size: var(--fs-6);
     margin-top: 15px;
