@@ -424,27 +424,6 @@ main
     transition: var(--transition-1);
 }
 
-.info_more-btn::before
-{
-    content: "";
-    position: absolute;
-    inset: 1px;
-    background: var(--bg-gradient-jet);
-    border-radius: inherit;
-    transition: var(--transition-1);
-    z-index: -1;
-}
-
-.info_more-btn:hover, .info_more-btn:focus
-{
-    background: var(--bg-gradient-yellow-1);
-}
-
-.info_more-btn:hover::before, .info_more-btn:focus::before
-{
-    background: var(--bg-gradient-yellow-2);
-}
-
 .info_more-btn span
 {
     display: none;
@@ -1903,7 +1882,6 @@ main
     background: var(--eerie-black-2);
     padding: 20px;
     border: 1px solid var(--jet);
-    box-shadow: var(--shadow-1);
     display: flex;
     flex-direction: column;
     gap: 15px;
