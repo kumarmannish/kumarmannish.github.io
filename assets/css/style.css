@@ -572,6 +572,7 @@ main
     width: 0;
     background: var(--text-gradient-yellow);
     border-radius: 3px;
+    transition: width 0.3s ease;
 }
 
 /* Show underline only when active or hover */
