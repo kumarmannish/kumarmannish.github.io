@@ -1,14 +1,37 @@
 'use strict';
 
 // element toggle function
-const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
+const elementToggleFunc = function (elem)
+{
+    elem.classList.toggle("active");
+}
 
-// sidebar variables
-const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
+const sidebar = document.querySelector("[data-sidebar]");
 
-// sidebar toggle functionality for mobile
-sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
+sidebarBtn.addEventListener("click", function (e) {
+    e.stopPropagation(); // Prevent immediate closing from document click
+    // Toggle sidebar visibility
+    sidebar.classList.toggle("active");
+
+    // Toggle icon
+    const icon = sidebarBtn.querySelector("ion-icon");
+    if (icon) {
+        icon.name = sidebar.classList.contains("active") ? "chevron-up" : "chevron-down";
+    }
+});
+
+// Close sidebar when clicking outside
+document.addEventListener("click", function (e) {
+    if (sidebar.classList.contains("active") && !sidebar.contains(e.target)) {
+        sidebar.classList.remove("active");
+
+        // Reset icon to chevron-down
+        const icon = sidebarBtn.querySelector("ion-icon");
+        if (icon) icon.name = "chevron-down";
+    }
+});
+
 
 
 // custom select variables
