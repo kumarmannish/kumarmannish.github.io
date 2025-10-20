@@ -35,6 +35,14 @@ if (selectItems && selectItems.length > 0 && selectValue && select) {
   }
 }
 
+// Close mobile select dropdown when clicking outside
+document.addEventListener("click", function(e) {
+    if (select && select.classList.contains("active") && !select.contains(e.target)) {
+        select.classList.remove("active");
+    }
+});
+
+
 // filter variables
 const filterItems = document.querySelectorAll("[data-filter-item]");
 
