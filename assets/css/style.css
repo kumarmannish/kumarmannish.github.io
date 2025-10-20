@@ -280,14 +280,14 @@ article.active
 }
 
 /* Article Title */
-.article-title
+.article-title, .navbar-link
 {
     position: relative;
     display: inline-block;
     padding-bottom: 7px;
 }
 
-.article-title::after
+.article-title::after, .navbar-link:after
 {
     content: "";
     position: absolute;
@@ -544,23 +544,42 @@ main
     padding: 0 10px;
 }
 
-.navbar-link
-{
+.navbar-link {
     color: var(--light-gray);
     font-size: var(--fs-8);
     padding: 20px 7px;
-    transition: color var(--transition-1);
+    position: relative;
+    display: inline-block;
 }
 
-.navbar-link:hover, .navbar-link:focus
-{
+/* Hover + Focus color */
+.navbar-link:hover, .navbar-link:focus {
     color: var(--light-gray-70);
 }
 
-.navbar-link.active
-{
+/* Active color */
+.navbar-link.active {
     color: var(--orange-yellow-crayola);
 }
+
+/* Underline (hidden by default) */
+.navbar-link::after {
+    content: "";
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background: var(--text-gradient-yellow);
+    border-radius: 3px;
+}
+
+/* Show underline only when active or hover */
+.navbar-link.active::after
+{
+    width: 100%;
+}
+
 
 
 
