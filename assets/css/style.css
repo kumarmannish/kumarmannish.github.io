@@ -283,6 +283,7 @@ article.active
 .article-title
 {
     position: relative;
+    display: inline-block;
     padding-bottom: 7px;
 }
 
@@ -292,7 +293,7 @@ article.active
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 30px;
+    right: 0;
     height: 3px;
     background: var(--text-gradient-yellow);
     border-radius: 3px;
@@ -1216,12 +1217,6 @@ main
         padding-bottom: 15px;
     }
 
-    .article-title::after
-    {
-        width: 40px;
-        height: 5px;
-    }
-
     .icon-box
     {
         width: 48px;
@@ -1696,8 +1691,8 @@ main
 
     .main-content
     {
-        min-width: 70%;
-        width: 70%;
+        min-width: 65%;
+        width: 65%;
         margin: 0;
     }
 
