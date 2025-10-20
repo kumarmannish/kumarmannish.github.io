@@ -296,7 +296,7 @@ async function fetchMediumPosts() {
             </h3>
             <p class="blog-post-date">${pubDate}</p>
             <p class="blog-post-snippet">${snippet}</p>
-            <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="blog-post-readmore">Read more →</a>
+            <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="blog-post-read-more">Read more →</a>
           </div>
         `;
         postsContainer.appendChild(postElement);
