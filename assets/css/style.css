@@ -793,19 +793,36 @@ main
     font-weight: var(--fw-300);
 }
 
-.skill-progress-bg
-{
-    background: var(--jet);
-    width: 100%;
-    height: 8px;
-    border-radius: 10px;
+/*.skill-progress-bg*/
+/*{*/
+/*    background: var(--jet);*/
+/*    width: 100%;*/
+/*    height: 8px;*/
+/*    border-radius: 10px;*/
+/*}*/
+
+/*.skill-progress-fill*/
+/*{*/
+/*    background: var(--text-gradient-yellow);*/
+/*    height: 100%;*/
+/*    border-radius: inherit;*/
+/*}*/
+
+.underline {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 10px;
 }
 
-.skill-progress-fill
-{
-    background: var(--text-gradient-yellow);
-    height: 100%;
-    border-radius: inherit;
+.underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; /* underline thickness */
+    background: linear-gradient(90deg, var(--light-gray), var(--light-gray));
+    border-radius: 2px;
 }
 
 
@@ -1690,8 +1707,8 @@ main
 
     .main-content
     {
-        min-width: 65%;
-        width: 65%;
+        min-width: 68%;
+        width: 68%;
         margin: 0;
     }
 
@@ -1779,7 +1796,7 @@ main
 
     /* #Resume */
     .timeline-text {
-        max-width: 700px;
+        max-width: 800px;
     }
 }
 
