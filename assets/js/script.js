@@ -8,28 +8,18 @@ const elementToggleFunc = function (elem)
 
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 const sidebar = document.querySelector("[data-sidebar]");
-const icon = sidebarBtn.querySelector("ion-icon");
 
 sidebarBtn.addEventListener("click", function (e) {
     e.stopPropagation(); // Prevent immediate closing from document click
-
     // Toggle sidebar visibility
     sidebar.classList.toggle("active");
 
-    // Animate the icon rotation
+    // Toggle icon
+    const icon = sidebarBtn.querySelector("ion-icon");
     if (icon) {
-        // Toggle rotation angle
-        if (sidebar.classList.contains("active")) {
-            icon.style.transform = "rotate(0deg)";
-        } else {
-            icon.style.transform = "rotate(-180deg)";
-        }
-
-        // Smooth transition
-        icon.style.transition = "transform 0.3s ease";
+        icon.name = sidebar.classList.contains("active") ? "chevron-up" : "chevron-down";
     }
 });
-
 
 // Close sidebar when clicking outside
 document.addEventListener("click", function (e) {
