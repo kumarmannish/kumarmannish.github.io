@@ -1191,6 +1191,10 @@ main
 /* Larger than 450px screens */
 @media (min-width: 450px)
 {
+    .timeline-text {
+        max-width: 800px;
+    }
+    
     /* Client */
     .clients-item
     {
@@ -1381,6 +1385,11 @@ main
     }
 
     /* #Resume */
+
+    .timeline-text {
+        max-width: 800px;
+    }
+
     .timeline-list
     {
         margin-left: 65px;
