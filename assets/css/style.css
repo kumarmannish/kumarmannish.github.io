@@ -1035,7 +1035,6 @@ main
     font-size: var(--fs-5);
     font-weight: var(--fw-400);
     text-transform: capitalize;
-    text-align: center;
     line-height: 1.3;
 }
 
