@@ -834,13 +834,29 @@ main
 /* --- Filter --- */
 .filter-list
 {
-    display: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    padding-left: 5px;
+    margin-bottom: 30px;
 }
 
-.filter-select-box
+.filter-item button
 {
-    position: relative;
-    margin-bottom: 25px;
+    color: var(--light-gray);
+    font-size: var(--fs-5);
+    transition: var(--transition-1);
+}
+
+.filter-item button:hover
+{
+    color: var(--light-gray-70);
+}
+
+.filter-item button.active
+{
+    color: var(--orange-yellow-crayola);
 }
 
 .filter-select
@@ -1503,38 +1519,6 @@ main
     .article-title
     {
         padding-bottom: 20px;
-    }
-
-    .filter-select-box
-    {
-        display: none;
-    }
-
-    .filter-list
-    {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 25px;
-        padding-left: 5px;
-        margin-bottom: 30px;
-    }
-
-    .filter-item button
-    {
-        color: var(--light-gray);
-        font-size: var(--fs-5);
-        transition: var(--transition-1);
-    }
-
-    .filter-item button:hover
-    {
-        color: var(--light-gray-70);
-    }
-
-    .filter-item button.active
-    {
-        color: var(--orange-yellow-crayola);
     }
 
     /* Portfolio and Blog Grid */
