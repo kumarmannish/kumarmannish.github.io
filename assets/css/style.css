@@ -1205,7 +1205,7 @@ main
     /* Portfolio, Blog */
     .project-img, .blog-banner-box
     {
-        height: auto;
+        height: 200px;
     }
 }
 
@@ -1417,6 +1417,7 @@ main
     .project-img, .blog-banner-box
     {
         border-radius: 16px;
+        height: 200px;
     }
 
     .blog-posts-list
