@@ -846,7 +846,6 @@ main
 {
     color: var(--light-gray);
     font-size: var(--fs-5);
-    transition: var(--transition-1);
 }
 
 .filter-item button:hover
@@ -938,7 +937,6 @@ main
 .project-item.active
 {
     display: block;
-    animation: scaleUp 0.25s ease forwards;
 }
 
 @keyframes scaleUp
