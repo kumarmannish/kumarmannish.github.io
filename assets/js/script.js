@@ -9,21 +9,25 @@ const elementToggleFunc = function (elem)
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 const sidebar = document.querySelector("[data-sidebar]");
 
-sidebarBtn.addEventListener("click", function (e) {
+sidebarBtn.addEventListener("click", function (e)
+{
     e.stopPropagation(); // Prevent immediate closing from document click
     // Toggle sidebar visibility
     sidebar.classList.toggle("active");
 
     // Toggle icon
     const icon = sidebarBtn.querySelector("ion-icon");
-    if (icon) {
+    if (icon)
+    {
         icon.name = sidebar.classList.contains("active") ? "chevron-up" : "chevron-down";
     }
 });
 
 // Close sidebar when clicking outside
-document.addEventListener("click", function (e) {
-    if (sidebar.classList.contains("active") && !sidebar.contains(e.target)) {
+document.addEventListener("click", function (e)
+{
+    if (sidebar.classList.contains("active") && !sidebar.contains(e.target))
+    {
         sidebar.classList.remove("active");
 
         // Reset icon to chevron-down
