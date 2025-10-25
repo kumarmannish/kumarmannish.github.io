@@ -45,7 +45,8 @@ const selectValue = document.querySelector("[data-selecct-value]");
 const filterBtn = document.querySelectorAll("[data-filter-btn]");
 
 // Check if select element exists before adding event listener
-if (select) {
+if (select)
+{
     select.addEventListener("click", function () { elementToggleFunc(this); });
 }
 
