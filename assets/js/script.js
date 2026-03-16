@@ -41,7 +41,7 @@ document.addEventListener("click", function (e)
 // custom select variables
 const select = document.querySelector("[data-select]");
 const selectItems = document.querySelectorAll("[data-select-item]");
-const selectValue = document.querySelector("[data-selecct-value]");
+const selectValue = document.querySelector("[data-select-value]");
 const filterBtn = document.querySelectorAll("[data-filter-btn]");
 
 // Check if select element exists before adding event listener
@@ -214,29 +214,6 @@ if (contactForm) {
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
-
-// add event to all nav link
-// Check if navigationLinks and pages exist
-if (navigationLinks && navigationLinks.length > 0 && pages && pages.length > 0) {
-    for (let i = 0; i < navigationLinks.length; i++) {
-        navigationLinks[i].addEventListener("click", function () {
-            for (let j = 0; j < pages.length; j++) { // Use a different loop variable 'j'
-                if (this.innerHTML.toLowerCase() === pages[j].dataset.page) {
-                    pages[j].classList.add("active");
-                    // Make sure 'i' here correctly refers to the clicked navigationLink
-                    // It might be better to find the active link again or manage active state more robustly
-                    // For now, assuming 'navigationLinks[i]' inside this loop is the intended clicked link
-                    navigationLinks.forEach(link => link.classList.remove("active")); // Remove active from all
-                    this.classList.add("active"); // Add active to the clicked one
-                    window.scrollTo(0, 0);
-                } else {
-                    pages[j].classList.remove("active");
-                    // navigationLinks[j].classList.remove("active"); // This line was likely an error, should only remove active from non-matching pages
-                }
-            }
-        });
-    }
-}
 
 
 // Function to fetch and display Medium posts
