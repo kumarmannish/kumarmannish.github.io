@@ -125,6 +125,15 @@ body
     background: var(--smoky-black);
 }
 
+@media (min-width: 1250px)
+{
+    html, body
+    {
+        height: 100%;
+        overflow: hidden;
+    }
+}
+
 a
 {
     text-decoration: none;
@@ -1689,18 +1698,22 @@ main
     main
     {
         max-width: 1250px;
+        height: calc(100vh - 80px);
         margin-top: 80px;
         margin-inline: auto;
         display: flex;
         justify-content: center;
         align-items: flex-start;
         gap: 15px;
+        overflow: hidden;
     }
 
     .main-content
     {
         min-width: 68%;
         width: 68%;
+        height: 100%;
+        overflow-y: auto;
         margin: 0;
     }
 
