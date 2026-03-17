@@ -1693,7 +1693,7 @@ main
         margin-inline: auto;
         display: flex;
         justify-content: center;
-        align-items: stretch;
+        align-items: flex-start;
         gap: 15px;
     }
 
@@ -1710,7 +1710,6 @@ main
         position: sticky;
         top: 60px;
         max-height: max-content;
-        height: 100%;
         margin-bottom: 0;
         padding-top: 60px;
         padding-left: 20px;
