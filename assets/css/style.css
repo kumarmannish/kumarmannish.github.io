@@ -1685,6 +1685,12 @@ main
         min-height: 100%;
     }
 
+    article.contact
+    {
+        min-height: unset;
+        padding-bottom: 30px;
+    }
+
     /* #Main */
     main
     {
