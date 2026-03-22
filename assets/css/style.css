@@ -1711,7 +1711,6 @@ main
         position: sticky;
         top: 80px;
         max-height: calc(100vh - 100px);
-        overflow-y: auto;
         margin-bottom: 0;
         padding-top: 60px;
         padding-left: 20px;
