@@ -1688,7 +1688,12 @@ main
     article.contact
     {
         min-height: unset;
-        padding-bottom: 30px;
+        padding-bottom: 0;
+    }
+
+    article.contact .contact-form
+    {
+        margin-bottom: 0;
     }
 
     /* #Main */
