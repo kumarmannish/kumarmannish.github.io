@@ -125,15 +125,6 @@ body
     background: var(--smoky-black);
 }
 
-@media (min-width: 1250px)
-{
-    html, body
-    {
-        height: 100%;
-        overflow: hidden;
-    }
-}
-
 a
 {
     text-decoration: none;
@@ -1698,22 +1689,19 @@ main
     main
     {
         max-width: 1250px;
-        height: calc(100vh - 80px);
         margin-top: 80px;
+        margin-bottom: 60px;
         margin-inline: auto;
         display: flex;
         justify-content: center;
         align-items: flex-start;
-        gap: 15px;
-        overflow: hidden;
+        gap: 25px;
     }
 
     .main-content
     {
         min-width: 68%;
         width: 68%;
-        height: 100%;
-        overflow-y: auto;
         margin: 0;
     }
 
@@ -1721,12 +1709,14 @@ main
     .sidebar
     {
         position: sticky;
-        top: 60px;
-        max-height: max-content;
+        top: 80px;
+        max-height: calc(100vh - 100px);
+        overflow-y: auto;
         margin-bottom: 0;
         padding-top: 60px;
         padding-left: 20px;
         z-index: 1;
+        flex-shrink: 0;
     }
 
     .sidebar-info
